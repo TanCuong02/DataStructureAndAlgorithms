@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 
-int sumOfFirstNNumbers(int n) {
+long sumOfFirstNNumbers(long  n) {
     if (n == 0) {
         return 0;
     } else {
@@ -11,10 +11,10 @@ int sumOfFirstNNumbers(int n) {
 
 int main(){
 
-  int n; scanf("%d", &n);
+   long n; scanf("%ld", &n);
   
-  int sum = sumOfFirstNNumbers(n);
+   long  sum = sumOfFirstNNumbers(n);
   
-  printf("%d", sum);
+  printf("%ld", sum);
 return 0;
 }
