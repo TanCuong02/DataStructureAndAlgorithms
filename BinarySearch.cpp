@@ -20,17 +20,17 @@ int BinarySearch(int n, int x, int a[], int left, int right){
 int main(){
 	
 int n;	
-	printf("Nhap so phan tu: ");
+	
 	scanf("%d", &n);
 		
 	int x;  
-	printf("Nhap so can tim: ");
+	
 	scanf("%d", &x);
 	
 	int* a = new int [n];
 	
 	for(int i = 0; i < n ;i++){
-		printf("Nhap so o vi tri %d tim: ", i);
+		
 		scanf("%d", &a[i]);
 	}
 	
