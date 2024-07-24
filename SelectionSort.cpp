@@ -20,12 +20,11 @@ int SelectionSort(int a[], int n){
           if(a[j] < a[min]){
             min = j;
           }
-          if(min != i){
+		}
+ if(min != i){
             swapCount++;
 			Swap(a[min],a[i]);
           }
-		}
- 
 	}
  
 }
