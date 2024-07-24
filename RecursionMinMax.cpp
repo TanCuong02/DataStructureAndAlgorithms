@@ -3,20 +3,30 @@
 
 int max(int a[], int n)
 {
-    int max = a[0];
-    for (int i = 1; i < n; i++)
-        if (max < a[i])
-            max = a[i];
-    return max;
+  if(n==0) return -1;
+  if(n == 1){
+      return a[0];
+  }else{
+      if(a[n - 1] > max(a, n-1)){
+          return a[n-1];
+      }else{
+      	return max(a, n-1);
+      }
+  }
 }
 
 int min(int a[], int n)
 {
-    int min = a[0];
-    for (int i = 1; i < n; i++)
-        if (min > a[i])
-            min = a[i];
-    return min;
+  if(n==0) return -1;
+  if(n == 1){
+      return a[0];
+  }else{
+      if(a[n-1] < min(a, n-1)){
+          return a[n-1];
+      }else{
+      	return min(a, n-1);
+      }
+  }
 }
 int main()
 {
