@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
+
 int Fibonacci(int n)
 {
     if (n == 1 || n == 2)
